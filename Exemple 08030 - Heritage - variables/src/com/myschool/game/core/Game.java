@@ -11,6 +11,7 @@ public class Game {
         playerCount++;
         System.out.println("Nombre de personnages : " + playerCount);
         character2.disBonjour();
-        character1.disBonjour(character2); 
+        character1.disBonjour(character2);
+        System.out.println("Moi, " + character2.name + "!, j'ai " + character2.liveScore + " points de vie!");
 	}
 }

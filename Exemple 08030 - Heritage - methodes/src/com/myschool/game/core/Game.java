@@ -11,6 +11,6 @@ public class Game {
         playerCount++;
         System.out.println("Nombre de personnages : " + playerCount);
         character2.disBonjour();
-        character1.disBonjour(character2); 
+        character1.disBonjour(character2);
 	}
 }
