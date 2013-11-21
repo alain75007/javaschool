@@ -8,7 +8,8 @@ public class Warrior extends Character {
 	}
 
 	public Warrior(String name, int liveScore) {
-		super(name, liveScore);
+		super();
+		//super(name, liveScore);
 		//System.out.println("Constructeur surchargé de warrior");
 
 	}

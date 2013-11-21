@@ -20,7 +20,6 @@ public class Game {
 		products[0]  = new Product("Antibiotic", 10);
 		products[1] = new Product("Vitamines", 15);
 		products[2]  = new Product("Onguent", 20);
-		products[] = { new Product("Antibiotic", 10), new Product("Vitamines", 15), new Product("Onguent", 20)};
 		Store store1 = new Store("Pharmacie Bastien", products);
 		store1.listProducts();
 	}

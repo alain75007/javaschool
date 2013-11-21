@@ -12,6 +12,10 @@ public class Game {
         System.out.println("Nombre de personnages : " + CharacterCount);
         character2.disBonjour();
         character1.disBonjour(character2);
-        System.out.println(character2.name + " : j'ai " + character2.liveScore + " points de vie!");
+        System.out.println("La classe de character1 est " + character1.getClass());
+        System.out.println("La classe de character2 est " + character2.getClass());
+        System.out.println("character1.toString() renvoie " + character2.toString());
+        System.out.println("character1.hashCode() renvoie " + character2.hashCode());
+        System.out.println("character1.equals(character2) renvoie " + character1.equals(character2));
 	}
 }

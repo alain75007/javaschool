@@ -17,7 +17,6 @@ public class Character {
 		//super();
 		System.out.println("Nouveau personnage.");
 		this.hello();
-		// TODO Auto-generated constructor stub
 	}
 	
 	public Character(int liveScore) {
@@ -38,6 +37,6 @@ public class Character {
 	}
 
 	public void setLiveScore(int liveScore) {
-		this.liveScore = liveScore; // Voir l’utilisation de this § 6.1
+		this.liveScore = liveScore;
 	}
 }
