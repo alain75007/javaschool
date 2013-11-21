@@ -12,6 +12,7 @@ public class Game {
         CharacterCount++;
         System.out.println("Nombre de personnages : " + CharacterCount);
         character1.disBonjour();
+        character1.setLiveScore(10);
 	}
 }
 

@@ -13,4 +13,3 @@ public class Game {
         System.out.println("Nombre de personnages : " + characterCount);
 	}
 }
-
