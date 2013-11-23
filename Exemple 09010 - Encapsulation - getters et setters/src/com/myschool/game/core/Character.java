@@ -4,17 +4,11 @@ package com.myschool.game.core;
 public class Character {
 	private String name;
 	private int lifePoints;
-	public int getLifePoints() {
-		return lifePoints;
-	}
-	public void setLifePoints(int lifePoints) {
-		this.lifePoints = lifePoints;
-	}
-	public void setLiveScore(int liveScore) {  // OBSOLETE
-		this.setLifePoints(liveScore);
+	public void setLiveScore(int liveScore) {
+		this.lifePoints = liveScore;
     }
-	public int getLiveScore() { // OBSOLETE
-		return this.getLifePoints();
+	public int getLiveScore() {
+		return this.lifePoints;
 	}
 	public String getName() {
 		return name;
