@@ -2,24 +2,22 @@
 package com.myschool.game.core;
 
 public class Character {
-	static private int characterCount = 0;
 
 	private String name;
 	private int lifePoints = 10;
 
 	public Character(String name) { // CONSTRUCTOR
-		System.out.println("Création d'un nouveau " + getClass().getName());
-		characterCount++;
+		System.out.println("Création d'un nouveau personnage");
 		this.name = name;
 	}
-	public Character(String name, int lifePoints) { // CONSTRUCTOR
+
+	public Character(String name, int lifePoints) {
 		this(name);
+		//super();
+		//this.name = name;
 		this.lifePoints = lifePoints;
 	}
 
-	public static int getCharacterCount() { // GETTER STATIQUE
-		return characterCount;
-	}	
 	public String getName() {
 		return name;
 	}
@@ -29,16 +27,17 @@ public class Character {
 	public void setLifePoints(int lifePoints) {
 		this.lifePoints = lifePoints;
 	}
-	public void setLiveScore(int liveScore) { // OBSOLETE: utiliser setLifePoints() à la place
+	public void setLiveScore(int liveScore) { // OBSOLETE use setLifePoints instead
 		this.setLifePoints(liveScore);
 	}
-	public int getLiveScore() { // OBSOLETE: utiliser getLifePoints() à la place
+	public int getLiveScore() { // OBSOLETE use getLifePoints instead
 		return this.getLifePoints();
 	}
 
 	void disBonjour(Character character) {
 		System.out.println(this.name + ": Bonjour " + character.name + "!");
 	}
+
 	void disBonjour() {
 		System.out.println(this.name + ": Bonjour tout le monde!");
 	}
