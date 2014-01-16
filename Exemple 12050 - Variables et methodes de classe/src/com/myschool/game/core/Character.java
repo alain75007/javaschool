@@ -1,7 +1,7 @@
 //Fichier Character.java
 package com.myschool.game.core;
 
-public class Character extends Warrior {
+public class Character {
 	static private int characterCount = 0;
 
 	private String name;
